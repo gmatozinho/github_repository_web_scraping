@@ -34,25 +34,25 @@ Response body:
 
 ```
 {
-    "csv": {
-        "lines": 7,
-        "bytes": 74
-    },
     "js": {
-        "lines": 509,
-        "bytes": 12479
+        "lines": 324,
+        "bytes": 7073
     },
     "json": {
-        "lines": 27,
-        "bytes": 531
+        "lines": 1005,
+        "bytes": 38354
     },
-    "md": {
-        "lines": 87,
-        "bytes": 2662
+    "Dockerfile": {
+        "lines": 19,
+        "bytes": 384
     },
     "gitignore": {
-        "lines": 108,
-        "bytes": 1649
+        "lines": 104,
+        "bytes": 1608
+    },
+    "md": {
+        "lines": 77,
+        "bytes": 1157
     }
 }
 ```

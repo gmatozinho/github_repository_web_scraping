@@ -11,6 +11,8 @@ https://githubrepositorywebscraping.herokuapp.com
 
 ### GET /scrape
 
+**Postman Api Doc**: https://documenter.getpostman.com/view/4737860/T1LQg5Yu?version=latest
+
 **query_parameter**:
 
 key: repositoryName
@@ -24,7 +26,7 @@ value: "public repository name"
 
 key: repositoryName
 
-value: gmatozinho/airline-routes
+value: gmatozinho/github_repository_web_scraping
 
 
 

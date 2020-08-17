@@ -43,13 +43,7 @@ const getInfo = (text, filename) => {
   let info = text
     .trim()
     .replace(/(\r\n|\s|\t|\r)/gm, "")
-    .split(filename)[1]
     .toUpperCase();
-  info = info.replace(
-    "/JUMPTOCODEDEFINITIONSNODEFINITIONSFOUNDINTHISFILE.CODENAVIGATIONNOTAVAILABLEFORTHISCOMMIT",
-    ""
-  );
-
   return info;
 };
 

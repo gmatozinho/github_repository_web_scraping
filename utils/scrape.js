@@ -69,12 +69,21 @@ const getItensFromDirectory = async (directory, files) => {
 const getFileInfo = async (file) => {
   const filePage = await githubService.getRepositoryItem(file.href);
   const $ = cheerio.load(filePage);
-  const divText = $(".mt-md-0").text();
-  const info = parseText.getInfo(divText, file.name);
+  let text = ""
+  const divText = $(".flex-md-items-center").each((index, element) => {
+    const div = $(".mt-md-0", element);
 
+    if(div){
+      text = div.text()
+    }
+  });
+  const info = parseText.getInfo(text, file.name);
+
+  const lines = parseText.getLines(info);
+  const bytes = parseText.getBytes(info);
   return {
-    lines: parseText.getLines(info),
-    bytes: parseText.getBytes(info),
+    lines,
+    bytes,
   };
 };
 

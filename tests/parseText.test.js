@@ -4,7 +4,7 @@ const parseText = require("../utils/parseText");
 describe("Test get info", function () {
   it("verifies successful response", async () => {
     const text =
-      "\n        airline-routes/input-routes.csv\n      \n\n      7 lines (7 sloc)\n      \n    74 Bytes\n  ";
+      "\n        \n      \n\n      7 lines (7 sloc)\n      \n    74 Bytes\n  ";
     const filename = "input-routes.csv";
     expect(parseText.getInfo(text, filename)).toBe("7LINES(7SLOC)74BYTES");
   });
